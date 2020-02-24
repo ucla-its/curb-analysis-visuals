@@ -1,0 +1,103 @@
+,Begin Date,Begin Time,End Time,Vehicle Location,Vehicle Type,Vehicle Characteristics,Transaction Characteristics,Bikeway Users Displaced,LZ Space Avail,Occupied while idle?,CNS?,TNC?,Notes,Duration
+1282,09/01/2019,5:00:00 PM,6:08:26 PM,Space 1,Car,,Interaction with parking meter,,,False,False,False,,1:08:26
+1283,09/01/2019,5:00:00 PM,6:32:42 PM,Space 3,Car,,,,,False,False,False,,1:32:42
+1284,09/01/2019,5:04:17 PM,5:04:32 PM,NB right turn pocket,Car,,,,1.0,True,False,False,,0:00:15
+1285,09/01/2019,5:04:40 PM,5:05:05 PM,SB bike lane,Car,,,0.0,0.0,False,False,True,,0:00:25
+1286,09/01/2019,5:04:59 PM,5:06:19 PM,Space 2,Car,,No one exits vehicle,,,True,False,False,,0:01:20
+1287,09/01/2019,5:07:37 PM,5:19:50 PM,Space 2,Car,,Interaction with parking meter,,,False,True,False,,0:12:13
+1288,09/01/2019,5:11:18 PM,5:11:43 PM,SB bike lane,Car,,,0.0,0.0,False,False,True,,0:00:25
+1289,09/01/2019,5:12:19 PM,5:13:26 PM,NB right turn pocket,Car,,,,0.0,False,True,False,,0:01:07
+1290,09/01/2019,5:18:01 PM,5:19:36 PM,SB bike lane,Car,Blinkers on,,9.0,0.0,False,True,False,,0:01:35
+1291,09/01/2019,5:21:55 PM,5:23:44 PM,Space 2,Car,,No one exits vehicle,,,False,True,False,a passenger got into front seat,0:01:49
+1292,09/01/2019,5:25:27 PM,5:33:04 PM,Space 2,Car,,Interaction with parking meter,,,False,True,False,,0:07:37
+1293,09/01/2019,5:26:10 PM,5:27:18 PM,SB bike lane,Pickup or SUV,Blinkers on,,0.0,0.0,False,False,True,,0:01:08
+1294,09/01/2019,5:35:01 PM,5:42:58 PM,Space 2,Car,,No interaction with parking meter,,,False,True,False,,0:07:57
+1295,09/01/2019,5:39:34 PM,5:41:47 PM,NB right turn pocket,Car,,,,0.0,True,False,False,,0:02:13
+1296,09/01/2019,5:46:19 PM,5:56:18 PM,Space 2,Car,,No interaction with parking meter,,,False,True,False,,0:09:59
+1297,09/01/2019,5:45:56 PM,6:01:43 PM,NB right turn pocket,Car,Blinkers on,,,1.0,False,True,False,,0:15:47
+1298,09/01/2019,5:55:52 PM,5:56:10 PM,SB bike lane,Car,,,0.0,0.0,False,False,True,,0:00:18
+1299,09/01/2019,5:56:56 PM,6:08:49 PM,Space 2,Car,,Interaction with parking meter,,,False,True,False,looked at the meter but still decided to park,0:11:53
+1300,09/01/2019,5:58:32 PM,6:01:04 PM,NB right turn pocket,Car,Blinkers on,,,0.0,True,False,False,,0:02:32
+1301,09/01/2019,5:59:19 PM,6:00:11 PM,SB bike lane,Car,Blinkers on,,0.0,0.0,False,True,False,,0:00:52
+1302,09/01/2019,6:01:01 PM,6:08:40 PM,SB bike lane,Car,Blinkers on,,3.0,0.0,False,True,False,,0:07:39
+1303,09/01/2019,6:03:15 PM,6:03:37 PM,SB bike lane,Car,,,0.0,0.0,False,False,True,,0:00:22
+1304,09/01/2019,6:04:59 PM,6:06:37 PM,SB bike lane,Car,,,0.0,0.0,True,False,False,,0:01:38
+1305,09/01/2019,6:11:09 PM,6:11:39 PM,Space 1,Car,,No interaction with parking meter,,,False,False,True,,0:00:30
+1306,09/01/2019,6:11:42 PM,6:13:32 PM,Space 2,Car,Blinkers on,No interaction with parking meter,,0.0,False,True,False,,0:01:50
+1307,09/01/2019,6:12:59 PM,6:15:52 PM,Space 1,Car,,No one exits vehicle,,,True,False,False,,0:02:53
+1308,09/01/2019,6:14:00 PM,6:23:29 PM,Space 2,Car,,Interaction with parking meter,,,False,True,False,looked at the meter but still decided to park,0:09:29
+1309,09/01/2019,6:16:07 PM,9:59:08 PM,Space 1,Car,,Interaction with parking meter,,,False,False,False,looked at the meter but still decided to park,3:43:01
+1310,09/01/2019,6:23:41 PM,7:43:29 PM,Space 2,Car,,No interaction with parking meter,,,False,False,False,,1:19:48
+1311,09/01/2019,6:26:48 PM,6:28:40 PM,NB right turn pocket,Pickup or SUV,,,,0.0,False,True,False,,0:01:52
+1312,09/01/2019,6:28:52 PM,6:31:53 PM,NB right turn pocket,Car,,,,0.0,False,True,False,,0:03:01
+1313,09/01/2019,6:31:10 PM,6:33:20 PM,SB bike lane,Car,Blinkers on,,6.0,0.0,True,False,False,,0:02:10
+1314,09/01/2019,6:33:27 PM,6:37:15 PM,Space 3,Car,,,,,False,True,False,,0:03:48
+1315,09/01/2019,6:35:34 PM,6:41:13 PM,NB right turn pocket,Car,Blinkers on,,,0.0,False,True,False,,0:05:39
+1316,09/01/2019,6:36:33 PM,6:36:50 PM,SB bike lane,Car,,,0.0,0.0,False,False,True,,0:00:17
+1317,09/01/2019,6:36:43 PM,6:38:29 PM,SB bike lane,Car,Blinkers on,,0.0,0.0,False,True,False,,0:01:46
+1318,09/01/2019,6:37:35 PM,7:31:42 PM,Space 3,Car,,,,,False,False,False,,0:54:07
+1319,09/01/2019,6:37:55 PM,6:39:03 PM,SB bike lane,Car,,,0.0,0.0,False,True,False,,0:01:08
+1320,09/01/2019,6:39:51 PM,6:39:58 PM,SB travel lane,Car,,,,0.0,False,False,True,,0:00:07
+1321,09/01/2019,6:40:11 PM,6:40:27 PM,SB bike lane,Car,Blinkers on,,0.0,0.0,False,False,True,,0:00:16
+1322,09/01/2019,6:41:12 PM,6:41:53 PM,SB bike lane,Car,Blinkers on,,0.0,0.0,False,True,False,,0:00:41
+1323,09/01/2019,6:51:00 PM,6:51:27 PM,SB bike lane,Car,,,1.0,0.0,False,False,True,,0:00:27
+1324,09/01/2019,6:52:46 PM,6:59:58 PM,SB bike lane,Car,Blinkers on,,6.0,0.0,False,True,False,,0:07:12
+1325,09/01/2019,6:56:56 PM,6:57:02 PM,SB bike lane,Car,,,0.0,0.0,False,False,True,,0:00:06
+1326,09/01/2019,6:59:07 PM,7:00:27 PM,SB bike lane,Car,,,0.0,0.0,False,False,False,enforcement,0:01:20
+1327,09/01/2019,7:01:02 PM,7:01:24 PM,SB bike lane,Car,Blinkers on,,0.0,0.0,False,False,True,,0:00:22
+1328,09/01/2019,7:01:33 PM,7:01:48 PM,SB bike lane,Car,,,0.0,0.0,False,False,True,,0:00:15
+1329,09/01/2019,7:02:23 PM,7:02:34 PM,SB bike lane,Car,,,0.0,0.0,False,False,True,,0:00:11
+1330,09/01/2019,7:07:50 PM,7:08:33 PM,SB bike lane,Car,Blinkers on,,0.0,0.0,True,False,False,,0:00:43
+1331,09/01/2019,7:09:51 PM,7:11:55 PM,SB bike lane,Car,Blinkers on,,1.0,0.0,False,True,False,,0:02:04
+1332,09/01/2019,7:10:35 PM,7:11:11 PM,SB bike lane,Car,,,0.0,0.0,True,False,False,,0:00:36
+1333,09/01/2019,7:14:32 PM,7:15:31 PM,NB right turn pocket,Car,Blinkers on,,,0.0,False,False,True,,0:00:59
+1334,09/01/2019,7:14:38 PM,7:16:53 PM,SB bike lane,Car,Blinkers on,,1.0,0.0,False,True,False,,0:02:15
+1335,09/01/2019,7:17:53 PM,7:18:10 PM,SB bike lane,Car,Blinkers on,,0.0,0.0,False,False,True,,0:00:17
+1336,09/01/2019,7:19:31 PM,7:22:24 PM,SB bike lane,Car,Blinkers on,,1.0,0.0,False,True,False,,0:02:53
+1337,09/01/2019,7:19:41 PM,7:25:33 PM,NB right turn pocket,Car,,,,0.0,True,False,False,parking enforcement? Not sure,0:05:52
+1338,09/01/2019,7:26:55 PM,7:27:14 PM,SB bike lane,Car,,,0.0,0.0,False,False,True,,0:00:19
+1339,09/01/2019,7:25:33 PM,7:32:34 PM,SB bike lane,Car,,,3.0,0.0,False,True,False,,0:07:01
+1340,09/01/2019,7:33:32 PM,7:37:48 PM,Space 3,Car,,,,,False,True,False,,0:04:16
+1341,09/01/2019,7:36:49 PM,7:37:48 PM,SB bike lane,Car,,,0.0,0.0,True,False,False,waited for space 3,0:00:59
+1342,09/01/2019,7:37:48 PM,8:14:24 PM,Space 3,Car,,,,,False,False,False,,0:36:36
+1343,09/01/2019,7:46:12 PM,7:52:31 PM,Space 2,Car,,No interaction with parking meter,,,False,True,False,,0:06:19
+1344,09/01/2019,7:52:48 PM,8:32:06 PM,Space 2,Car,,No interaction with parking meter,,,False,False,False,,0:39:18
+1345,09/01/2019,7:54:42 PM,7:57:28 PM,SB bike lane,Car,,,0.0,0.0,False,True,False,,0:02:46
+1346,09/01/2019,8:07:29 PM,8:08:39 PM,NB right turn pocket,Car,,,,0.0,False,True,False,,0:01:10
+1347,09/01/2019,8:08:47 PM,8:09:15 PM,SB bike lane,Pickup or SUV,Blinkers on,,0.0,0.0,False,False,True,,0:00:28
+1348,09/01/2019,8:11:05 PM,8:19:36 PM,NB right turn pocket,Pickup or SUV,,,,0.0,False,True,False,,0:08:31
+1349,09/01/2019,8:12:20 PM,8:14:06 PM,SB bike lane,Car,Blinkers on,,1.0,0.0,False,True,False,,0:01:46
+1350,09/01/2019,8:12:39 PM,8:14:24 PM,SB bike lane,Car,Blinkers on,,1.0,0.0,False,True,False,,0:01:45
+1351,09/01/2019,8:14:38 PM,8:16:36 PM,Space 3,Car,,,,,False,True,False,,0:01:58
+1352,09/01/2019,8:17:18 PM,8:35:52 PM,Space 3,Pickup or SUV,,,,,False,False,False,,0:18:34
+1353,09/01/2019,8:17:52 PM,8:21:04 PM,NB right turn pocket,Car,,,,0.0,False,True,False,,0:03:12
+1354,09/01/2019,8:25:50 PM,8:29:42 PM,SB bike lane,Car,Blinkers on,,2.0,0.0,False,True,False,,0:03:52
+1355,09/01/2019,8:30:45 PM,8:32:16 PM,SB bike lane,Car,,,0.0,0.0,False,True,False,waited for space 2,0:01:31
+1356,09/01/2019,8:32:18 PM,8:34:47 PM,Space 2,Car,,No interaction with parking meter,,,False,True,False,,0:02:29
+1357,09/01/2019,8:32:33 PM,8:32:55 PM,SB bike lane,Car,,,0.0,0.0,False,False,True,,0:00:22
+1358,09/01/2019,8:33:11 PM,8:34:52 PM,NB right turn pocket,Car,,,,0.0,True,False,False,,0:01:41
+1359,09/01/2019,8:34:10 PM,8:34:23 PM,SB bike lane,Car,,,0.0,0.0,False,False,True,,0:00:13
+1360,09/01/2019,8:35:53 PM,8:46:22 PM,Space 2,Pickup or SUV,,No interaction with parking meter,,,False,True,False,,0:10:29
+1361,09/01/2019,8:35:52 PM,9:59:08 PM,Space 3,Car,,,,,False,False,False,,1:23:16
+1362,09/01/2019,8:36:02 PM,8:38:16 PM,SB bike lane,Car,,,0.0,0.0,True,False,False,,0:02:14
+1363,09/01/2019,8:39:00 PM,8:39:17 PM,SB bike lane,Car,,,0.0,0.0,False,False,True,,0:00:17
+1364,09/01/2019,8:47:45 PM,8:48:03 PM,Space 2,Car,,No interaction with parking meter,,,False,False,True,,0:00:18
+1365,09/01/2019,8:49:52 PM,8:54:05 PM,NB right turn pocket,Car,Blinkers on,,,1.0,True,False,False,,0:04:13
+1366,09/01/2019,8:54:32 PM,8:58:28 PM,Space 2,Car,,No interaction with parking meter,,,False,True,False,,0:03:56
+1367,09/01/2019,8:58:11 PM,9:00:10 PM,NB right turn pocket,Pickup or SUV,,,,0.0,False,True,False,,0:01:59
+1368,09/01/2019,8:59:02 PM,8:59:30 PM,Space 2,Car,,No one exits vehicle,,,True,False,False,,0:00:28
+1369,09/01/2019,9:01:09 PM,9:14:14 PM,NB right turn pocket,Pickup or SUV,,,,1.0,True,False,False,,0:13:05
+1370,09/01/2019,9:04:49 PM,9:23:11 PM,Space 2,Car,,Interaction with parking meter,,,False,True,False,looked at the meter but still decided to park,0:18:22
+1371,09/01/2019,9:05:49 PM,9:06:34 PM,SB bike lane,Car,Blinkers on,,1.0,0.0,True,False,False,,0:00:45
+1372,09/01/2019,9:07:08 PM,9:07:55 PM,SB bike lane,Car,,,0.0,0.0,False,False,True,,0:00:47
+1373,09/01/2019,9:20:47 PM,9:22:49 PM,SB bike lane,Car,Blinkers on,,4.0,0.0,False,True,False,,0:02:02
+1374,09/01/2019,9:20:47 PM,9:21:22 PM,SB bike lane,Car,Blinkers on,,0.0,0.0,False,False,True,,0:00:35
+1375,09/01/2019,9:22:51 PM,9:24:26 PM,NB right turn pocket,Car,,,,0.0,True,False,False,enforcement,0:01:35
+1376,09/01/2019,9:24:14 PM,9:59:08 PM,Space 2,Car,,No interaction with parking meter,,,False,False,False,,0:34:54
+1377,09/01/2019,9:32:07 PM,9:32:29 PM,NB right turn pocket,Car,,,,0.0,True,False,False,,0:00:22
+1378,09/01/2019,9:32:18 PM,9:32:49 PM,SB bike lane,Car,,,0.0,0.0,False,False,True,,0:00:31
+1379,09/01/2019,9:33:57 PM,9:38:50 PM,NB right turn pocket,Car,,,,0.0,True,False,False,,0:04:53
+1380,09/01/2019,9:38:42 PM,9:41:58 PM,SB bike lane,Car,,,2.0,0.0,False,False,True,,0:03:16
+1381,09/01/2019,9:45:56 PM,9:46:31 PM,NB right turn pocket,Car,,,,0.0,False,False,True,,0:00:35
+1382,09/01/2019,9:54:12 PM,9:55:10 PM,NB right turn pocket,Car,,,,0.0,False,True,False,,0:00:58
+1383,09/01/2019,9:58:56 PM,9:59:08 PM,SB bike lane,Car,,,0.0,0.0,False,False,True,,0:00:12
