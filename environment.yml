@@ -13,6 +13,6 @@ dependencies:
   - mplcursors
   - ipympl
   - cython
-  - mysql-connector-python
+  - appmode
 prefix: /Users/edasmalchi/anaconda3/envs/pd1
 
