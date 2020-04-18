@@ -361,7 +361,7 @@ class CurbDataPlotter(CurbData):
             with pd.option_context('mode.chained_assignment', None):
                 df_to_plot = agged.loc[:, agged.columns != 'Bikeway Users Displaced']
                 df_to_plot.loc[:,'Total Time'] = df_to_plot['Total Time'].apply(
-                        lambda x: x.seconds / 60)
+                        lambda x: (x.seconds / 60) + (x.days * 24 * 60))
                 df_to_plot = (df_to_plot
                         .rename(columns={'Total Time': 'Total Time (Minutes)'})
                         .transpose())
