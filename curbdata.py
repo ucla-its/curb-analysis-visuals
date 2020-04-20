@@ -479,7 +479,8 @@ class CurbDataPlotter(CurbData):
                 self.plot_selection.time_activity_plot(percent=True)
 
             from IPython.display import display, FileLink
-            self.download_button.on_click(lambda x: self.plot_selection.download_selection())
+            self.download_button.on_click(lambda x: 
+                    display(self.plot_selection.download_selection()))
             display(self.download_button)
             self.plot_selection.plot.savefig('plot.png', bbox_inches = 'tight')
             display(FileLink('plot.png', result_html_prefix="Download plot: "))
