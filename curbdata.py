@@ -425,6 +425,12 @@ class CurbDataPlotter(CurbData):
             description='Aggregation Type:',
             disabled=False
         )
+        self.download_button = widgets.Button(
+                description='Download Data',
+                button_style='',
+                tooltip='Download Data',
+                icon='download'
+        )
         def update(*args):
             """allows date selection to define time selection range"""
             #TODO rewrite to use just index not Begin Date
@@ -472,8 +478,10 @@ class CurbDataPlotter(CurbData):
             elif plot_type == 'Aggregate (percent)':
                 self.plot_selection.time_activity_plot(percent=True)
 
-            self.plot_selection.plot.savefig('plot.png', bbox_inches = 'tight')
             from IPython.display import display, FileLink
+            self.download_button.on_click(lambda x: self.plot_selection.download_selection())
+            display(self.download_button)
+            self.plot_selection.plot.savefig('plot.png', bbox_inches = 'tight')
             display(FileLink('plot.png', result_html_prefix="Download plot: "))
         
         widgets.interact(lambda x, Date, Time, weekday: 
