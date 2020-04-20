@@ -285,14 +285,13 @@ class CurbDataPlotter(CurbData):
         return palette
 
     def time_occ_plot(self, save=False):
+        """Plots space occupancy and bike lane blocking over time in the selected interval. 
+        """
         import matplotlib.pyplot as plt
         import matplotlib.dates as mdates
         import matplotlib.cbook as cbook
         from pandas.plotting import register_matplotlib_converters
         register_matplotlib_converters()
-        """Using a modified seaborn strip plot, plots space occupancy and 
-        bike lane blocking using the specified color palette. 
-        """
         #return int for size based on plot duration
         def best_size(duration_min):
             if duration_min < 2:
