@@ -12,6 +12,12 @@ from utilities import color_blind_10
 import seaborn as sns
 import ipywidgets as widgets
 
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+import matplotlib.cbook as cbook
+from pandas.plotting import register_matplotlib_converters
+register_matplotlib_converters()
+
 class CurbData:
     """Stores curb utilization data and associated functions"""
     def __init__(self, timestamped_df, format_dict):
@@ -21,6 +27,25 @@ class CurbData:
         self.subset_type = 'All Data'
         self.subset_duration = max(self.df_subset.index) - min(self.df_subset.index)
         
+    def span(self):
+        '''Generates df summarizing span of data by date.
+        Unlike most methods, includes data outside enforcement interval.
+        '''
+        #TODO summarize total days, total hours...
+        span_df = pd.DataFrame()
+        activity_df = self.df_all.drop_duplicates(subset=['Activity Id'])
+        for date in np.unique(activity_df.index.date):
+            date_df = activity_df[activity_df.index.date == date]
+            st_time = date_df.index.min().strftime('%H:%M:%S')
+            end_time = date_df.index.max().strftime('%H:%M:%S')
+            duration = date_df.index.max() - date_df.index.min()
+            span_df = span_df.append(
+                    pd.DataFrame.from_dict({'date': [date.strftime('%a, %b %d %Y')],
+                        'start time': st_time,
+                        'end time': end_time,
+                        'duration': duration}))
+        return span_df.reset_index(drop=True)
+
     def violator_timestamp_table(self):
         #TODO fixed bug, but still a cleanup candidate
         '''Generates time-indexed df counting number and type of violators present.'''
@@ -284,14 +309,39 @@ class CurbDataPlotter(CurbData):
             list([tuple(value/255 for value in color) for color in color_list]))))
         return palette
 
+    def activity_distribution_plot(self, activity, subset=False):
+        '''Plots a time distribution of CNS or TNC activity'''
+        assert activity in ['CNS', 'TNC']
+        activity_lbl = f'Minutes of {activity} Activity'
+        if subset:
+            df = self.df_subset
+        else:
+            df = self.df_all
+        if activity == 'CNS':
+            activity_filtered = df[df['CNS?'] == True]
+        if activity == 'TNC':
+            activity_filtered = df[df['TNC?'] == True]
+        grouped = activity_filtered.groupby(pd.Grouper(freq='20min')).count()
+        grouped['Time'] = grouped.index.time
+        grouped = grouped.groupby('Time').sum()
+        grouped = grouped[grouped['Activity Id'] != 0].rename(
+            columns={'Activity Id':activity_lbl})[[activity_lbl]]
+        grouped[activity_lbl] = grouped[activity_lbl] = grouped[activity_lbl] / 60
+        grouped.index = grouped.index.map(lambda x: x.strftime('%I:%M %p'))
+        ax = grouped.plot(kind='bar', rot=60, figsize=(10,7))
+        trans = ax.get_xaxis_transform()
+        x = grouped.index.searchsorted('06:00 PM')
+        ax.axvline(x, color='red')
+        plt.text(x, .97, 'Enforcement Starts', transform=trans)
+        x = grouped.index.searchsorted('10:00 PM')
+        ax.axvline(x, color='red')
+        plt.text(x, .97, 'Enforcement Ends', transform=trans)
+        plt.show()
+        return ax
+
     def time_occ_plot(self, save=False):
         """Plots space occupancy and bike lane blocking over time in the selected interval. 
         """
-        import matplotlib.pyplot as plt
-        import matplotlib.dates as mdates
-        import matplotlib.cbook as cbook
-        from pandas.plotting import register_matplotlib_converters
-        register_matplotlib_converters()
         #return int for size based on plot duration
         def best_size(duration_min):
             if duration_min < 2:
