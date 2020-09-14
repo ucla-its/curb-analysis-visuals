@@ -25,7 +25,7 @@ class CurbData:
         self.df_all = timestamped_df
         self.df_subset = self.df_filtered = self.__time_filter__()
         self.subset_type = 'All Data'
-        self.subset_duration = max(self.df_subset.index) - min(self.df_subset.index)
+        self.subset_duration = self.__subset_duration__()
         
     def span(self):
         '''Generates df summarizing span of data by date.
@@ -101,8 +101,15 @@ class CurbData:
         if type(v_table) == type(None):
             return
         exceed_min = v_table[v_table['Blockers Less Violators'] > 0].shape[0] / 60
-        total_min = self.subset_duration.seconds / 60
+        total_min = self.subset_duration / 60
         return {'blockers_exceed':exceed_min, 'total_minutes':total_min}
+
+    def __subset_duration__(self):
+        '''Returns duration (in seconds) of the period of time subset_df covers'''
+        df = pd.DataFrame(self.df_subset.index)
+        df['Day'] = df['Timestamp'].apply(lambda x: x.day)
+        td_sum = df.groupby('Day').apply(lambda x: max(x.Timestamp) - min(x.Timestamp)).sum()
+        return td_sum.total_seconds()
 
     def __time_filter__(self):
         '''filters df to enforcement interval provided in format (as 24-hr time hh:mm)'''
